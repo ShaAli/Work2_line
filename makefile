@@ -3,5 +3,5 @@ run:
 
 clean:
 	rm *.pyc 
-  rm *.ppm 
-  rm *.png
+	rm *.ppm 
+	rm *.png
