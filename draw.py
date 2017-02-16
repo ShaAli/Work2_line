@@ -3,25 +3,25 @@ from display import *
 def draw_line( x0, y0, x1, y1, screen, color ):
     dx = x1 - x0
     dy = y1 - y0
-    if abs(dx) > abs(dy):
-        if dx > 0:
-            if dy > 0:
+    if abs(dx) >= abs(dy):
+        if dx >= 0:
+            if dy >= 0:
                 draw_line1( x0, y0, x1, y1, screen, color )
             else:
                 draw_line8( x0, y0, x1, y1, screen, color )
         else:
-            if dy > 0:
+            if dy >= 0:
                 draw_line4( x0, y0, x1, y1, screen, color )
             else:
                 draw_line5( x0, y0, x1, y1, screen, color )
-    if abs(dy) > abs(dx):
-        if dx > 0:
-            if dy > 0:
+    if abs(dy) >= abs(dx):
+        if dx >= 0:
+            if dy >= 0:
                 draw_line2( x0, y0, x1, y1, screen, color )
             else:
                 draw_line7( x0, y0, x1, y1, screen, color )
         else:
-            if dy > 0:
+            if dy >= 0:
                 draw_line3( x0, y0, x1, y1, screen, color )
             else:
                 draw_line6( x0, y0, x1, y1, screen, color )
